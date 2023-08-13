@@ -1,0 +1,56 @@
+/* Square Component */
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3498db; /* A nice shade of blue */
+    color: #333; /* Darker color for X and O */
+    border: 1px solid #2980b9; /* Slightly darker border color */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 5px; /* Rounded borders */
+  }
+  
+  .square:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Winning Squares */
+  .square.win {
+    background-color: #e74c3c; /* A vibrant shade of red */
+    color: #fff;
+  }
+  
+  /* Status Message */
+  .status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Board Rows */
+  .board-row {
+    display: flex;
+  }
+  
+  /* Animations */
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  
